@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Verdi Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <a href="index.html" class="logo">VERDI STUDIO</a>
+        <ul class="nav-links">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="journal.html">Journal</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+            <li><a href="contact.html" class="cta-button">Start a Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">Let's build something great</p>
+            <p class="page-description">
+                Whether you have a project in mind or just want to explore possibilities, we'd love to hear from you.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-wrapper">
+            <div class="contact-form-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="project-type">Project Type</label>
+                        <select id="project-type" name="project-type">
+                            <option value="">Select a project type</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="residential">Residential</option>
+                            <option value="institutional">Institutional</option>
+                            <option value="mixed-use">Mixed-Use</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="form-submit-btn">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-container">
+                <div class="contact-info-section">
+                    <h3>Our Offices</h3>
+                    
+                    <div class="office-info">
+                        <h4>Copenhagen</h4>
+                        <p>Vesterbrogade 123, 1620 København V</p>
+                        <p><a href="mailto:copenhagen@verdistudio.arch">copenhagen@verdistudio.arch</a></p>
+                        <p><a href="tel:+4532123456">+45 32 12 34 56</a></p>
+                    </div>
+
+                    <div class="office-info">
+                        <h4>Singapore</h4>
+                        <p>1 Marina Boulevard, #28-00</p>
+                        <p><a href="mailto:singapore@verdistudio.arch">singapore@verdistudio.arch</a></p>
+                        <p><a href="tel:+6561234567">+65 6123 4567</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-info-section">
+                    <h3>Quick Inquiries</h3>
+                    <p><strong>General:</strong> <a href="mailto:hello@verdistudio.arch">hello@verdistudio.arch</a></p>
+                    <p><strong>Press:</strong> <a href="mailto:press@verdistudio.arch">press@verdistudio.arch</a></p>
+                    <p><strong>Careers:</strong> <a href="mailto:careers@verdistudio.arch">careers@verdistudio.arch</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">VERDI STUDIO</div>
+                <p class="footer-tagline">Let's create something extraordinary</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Studio</h4>
+                <ul>
+                    <li><a href="studio.html">About</a></li>
+                    <li><a href="studio.html#team">Team</a></li>
+                    <li><a href="studio.html#careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Work</h4>
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Case Studies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
+                    <li><a href="#linkedin">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Newsletter</h4>
+                <p style="opacity: 0.7; margin-bottom: 1rem; font-size: 0.9rem;">Get insights on sustainable design and computational architecture.</p>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>© 2026 Verdi Studio. All rights reserved.</div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
