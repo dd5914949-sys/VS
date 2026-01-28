@@ -1231,6 +1231,42 @@ nav.scrolled {
     transform: scale(1.05);
 }
 
+/* Ensure value icons have circular gradient backgrounds */
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--sage), var(--earth));
+    border-radius: 50%;
+    margin: 0 auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure award icons have proper styling */
+.award-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent), var(--earth));
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ensure expertise icons have circular gradient backgrounds */
+.expertise-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--sage), var(--earth));
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Journal Image Full (Featured Article) */
 .journal-image-full {
     position: relative;
