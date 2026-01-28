@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamo to Grasshopper: An Evolution — Verdi Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="scrolled">
+        <a href="index.html" class="logo">VERDI STUDIO</a>
+        <ul class="nav-links">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="journal.html" class="active">Journal</a></li>
+            <li><a href="studio.html">Studio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="cta-button">Start a Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1 class="page-title">Dynamo to Grasshopper: An Evolution</h1>
+            <p class="page-subtitle">Making the Transition Between Parametric Platforms</p>
+            <p class="page-description">
+                For architects transitioning from Revit and Dynamo to Rhino and Grasshopper, the shift represents more than learning new software—it's a fundamental change in design thinking. Here's what we've learned from making this evolution in our practice.
+            </p>
+            <div style="margin-top: 2rem; opacity: 0.7;">
+                <span>January 5, 2026</span> • <span>11 min read</span> • <span>By Sofia Rodriguez</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <section class="services-detail-section">
+        <div class="service-detail">
+            <div class="service-content">
+                <h2>Understanding the Philosophical Difference</h2>
+                <p>Dynamo and Grasshopper might look similar—both use visual programming with nodes and wires—but they embody fundamentally different approaches to design. Dynamo is deeply integrated with Revit's BIM environment, emphasizing structured information and building documentation.</p>
+                <p>Grasshopper, by contrast, is geometry-first. It emerged from the industrial design and architecture communities that prioritized form exploration and computational design. Where Dynamo excels at automating Revit workflows and managing building data, Grasshopper shines in form generation, environmental analysis, and complex geometric operations.</p>
+                <p>This isn't about one being better—they serve different purposes. Dynamo helps you work more efficiently within BIM. Grasshopper helps you explore design possibilities that would be difficult or impossible to model directly. Understanding this distinction is the first step in the transition.</p>
+            </div>
+            <div class="service-visual">
+                <img src="images/journal-dynamo-grasshopper.jpg" alt="Dynamo vs Grasshopper">
+            </div>
+        </div>
+
+        <div class="service-detail reverse">
+            <div class="service-content">
+                <h2>Data Structures: From Lists to Trees</h2>
+                <p>The biggest conceptual hurdle for Dynamo users is Grasshopper's data tree structure. In Dynamo, you primarily work with flat lists or nested lists. Grasshopper uses trees with branches, where data is organized hierarchically with paths like {0;0}, {0;1}, {1;0}.</p>
+                <p>This tree structure is powerful for managing complex geometric operations where you need to maintain relationships between different sets of data. For example, when creating a facade with panels that vary by floor and orientation, trees keep this organizational logic intact through multiple operations.</p>
+                <p>The learning curve is steep, but once you understand path mapping and tree management, you'll find Grasshopper can handle levels of geometric complexity that would be unwieldy in Dynamo. Components like Shift Paths, Flatten Tree, and Graft become essential tools in your workflow.</p>
+            </div>
+            <div class="service-visual">
+                <img src="images/journal-data-structures.jpg" alt="Data Tree Structures">
+            </div>
+        </div>
+
+        <div class="service-detail">
+            <div class="service-content">
+                <h2>Geometry Generation: Freedom and Responsibility</h2>
+                <p>In Dynamo, you're working within Revit's constraints—families, levels, categories. This provides structure but limits geometric freedom. Grasshopper has no such constraints. You can create any surface, any curve, any solid that mathematics allows.</p>
+                <p>This freedom is exhilarating and dangerous. Without Revit's built-in organizational structure, you must be disciplined about organizing your definitions. Use groups, clusters, and careful naming conventions. What seems clear today becomes cryptic in six months when you need to modify it.</p>
+                <p>The trade-off is worth it for early-stage design exploration. Grasshopper lets you quickly test radical formal ideas, optimize facade patterns based on solar analysis, or generate complex geometries that would take days to model directly. You're designing systems that generate geometry, not just geometry itself.</p>
+            </div>
+            <div class="service-visual">
+                <img src="images/journal-geometry-freedom.jpg" alt="Geometric Freedom in Grasshopper">
+            </div>
+        </div>
+
+        <div class="service-detail reverse">
+            <div class="service-content">
+                <h2>The Plugin Ecosystem: Power and Complexity</h2>
+                <p>Dynamo's package manager provides useful extensions, but Grasshopper's plugin ecosystem is vast and sometimes overwhelming. Food4Rhino hosts hundreds of plugins for everything from structural analysis to machine learning integration.</p>
+                <p>Essential plugins for architectural work include Ladybug and Honeybee for environmental analysis, Kangaroo for physics simulation, Pufferfish for geometric operations, and Lunchbox for paneling and structures. Each extends Grasshopper's capabilities dramatically.</p>
+                <p>The challenge is avoiding plugin dependency. It's tempting to install a plugin for every task, but this makes your definitions less portable and harder to maintain. Learn the core components thoroughly before relying on plugins. Understand what problems each plugin solves, and use them strategically.</p>
+            </div>
+            <div class="service-visual">
+                <img src="images/journal-plugin-ecosystem.jpg" alt="Grasshopper Plugin Ecosystem">
+            </div>
+        </div>
+
+        <div class="service-detail">
+            <div class="service-content">
+                <h2>Bridging the Gap: Rhino.Inside.Revit</h2>
+                <p>The game-changer for practices using both platforms is Rhino.Inside.Revit. This tool embeds Rhino and Grasshopper directly inside Revit, allowing you to leverage Grasshopper's geometric capabilities while maintaining BIM data structure.</p>
+                <p>You can use Grasshopper to generate complex geometries, run environmental analyses, or optimize designs, then push the results directly into your Revit model as native elements. The parametric relationships persist—change parameters in Grasshopper, and your Revit model updates automatically.</p>
+                <p>This workflow gives you the best of both worlds: Grasshopper's design freedom for exploration and optimization, combined with Revit's robust documentation and coordination capabilities. It's how we bridge conceptual design and construction documentation without losing parametric control.</p>
+            </div>
+            <div class="service-visual">
+                <img src="images/journal-rhino-inside-revit.jpg" alt="Rhino.Inside.Revit Workflow">
+            </div>
+        </div>
+
+        <div class="service-detail reverse">
+            <div class="service-content">
+                <h2>Learning Strategies: Making the Transition</h2>
+                <p>Start by rebuilding simple Dynamo scripts in Grasshopper. This teaches you to think in Grasshopper's paradigm while working with familiar logic. Don't try to replicate Dynamo's approach exactly—embrace Grasshopper's different methods.</p>
+                <p>Invest time in understanding core components: points, vectors, curves, surfaces, and solids. Master data tree manipulation before moving to complex operations. The grasshopper3d.com forum and various YouTube channels offer excellent tutorials for specific techniques.</p>
+                <p>Most importantly, accept that there's usually multiple ways to solve any problem in Grasshopper. The "right" solution depends on your specific needs—clarity, performance, flexibility, or parametric control. Experience teaches you which approach works best for different situations.</p>
+            </div>
+            <div class="service-visual">
+                <img src="images/journal-learning-strategies.jpg" alt="Learning Grasshopper">
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="process-section">
+        <h2 class="section-title">Key Differences Summary</h2>
+        <p class="section-description-center" style="max-width: 800px; margin: 0 auto 3rem;">Understanding these fundamental differences will smooth your transition from Dynamo to Grasshopper:</p>
+
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="process-number">01</div>
+                <h3>Purpose</h3>
+                <p>Dynamo automates BIM workflows; Grasshopper enables geometric exploration and optimization.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">02</div>
+                <h3>Data Structure</h3>
+                <p>Move from simple lists to hierarchical trees—more complex but far more powerful.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">03</div>
+                <h3>Geometry</h3>
+                <p>Unrestricted geometric freedom requires greater organizational discipline.</p>
+            </div>
+            <div class="process-step">
+                <div class="process-number">04</div>
+                <h3>Integration</h3>
+                <p>Use Rhino.Inside.Revit to combine both platforms' strengths in one workflow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <h2>Curious about our computational design process?</h2>
+        <p>
+            Explore how we use Grasshopper and advanced parametric tools to create optimized, sustainable architecture.
+        </p>
+        <a href="services.html" class="btn-primary" style="background: var(--accent); color: var(--charcoal); border-color: var(--accent);">See Our Services</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div>
+                <div class="footer-brand">VERDI STUDIO</div>
+                <p class="footer-tagline">Let's create something extraordinary</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Studio</h4>
+                <ul>
+                    <li><a href="studio.html">About</a></li>
+                    <li><a href="studio.html#team">Team</a></li>
+                    <li><a href="studio.html#careers">Careers</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Work</h4>
+                <ul>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projects.html">Case Studies</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Connect</h4>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
+                    <li><a href="#linkedin">LinkedIn</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Newsletter</h4>
+                <p style="opacity: 0.7; margin-bottom: 1rem; font-size: 0.9rem;">Get insights on sustainable design and computational architecture.</p>
+                <div class="newsletter-input">
+                    <input type="email" placeholder="Your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div>© 2026 Verdi Studio. All rights reserved.</div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy</a>
+                <a href="#terms">Terms</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
