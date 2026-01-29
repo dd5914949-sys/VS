@@ -1,0 +1,170 @@
+/* Hero Slideshow Styles */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 4rem 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Slideshow Container */
+.hero-slideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* Overlay gradient for text readability */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(250, 248, 243, 0.95) 0%,
+        rgba(250, 248, 243, 0.85) 40%,
+        rgba(250, 248, 243, 0.4) 70%,
+        transparent 100%
+    );
+    z-index: 1;
+}
+
+/* Animated decorative element */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(107, 142, 127, 0.1) 0%, rgba(201, 168, 130, 0.15) 100%);
+    clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Content positioning */
+.hero-content {
+    max-width: 900px;
+    position: relative;
+    z-index: 3;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Slideshow indicators/dots */
+.slideshow-indicators {
+    position: absolute;
+    bottom: 4rem;
+    left: 4rem;
+    display: flex;
+    gap: 0.8rem;
+    z-index: 3;
+}
+
+.indicator-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--forest);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator-dot.active {
+    background: var(--forest);
+    transform: scale(1.2);
+}
+
+.indicator-dot:hover {
+    background: var(--sage);
+    transform: scale(1.1);
+}
+
+/* Slideshow controls (optional) */
+.slideshow-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.slide-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(26, 58, 46, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: var(--cream);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.slide-btn:hover {
+    background: var(--forest);
+    border-color: var(--accent);
+    transform: scale(1.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-overlay {
+        background: linear-gradient(
+            to bottom,
+            rgba(250, 248, 243, 0.9) 0%,
+            rgba(250, 248, 243, 0.95) 100%
+        );
+    }
+}
+
+@media (max-width: 768px) {
+    .slideshow-indicators {
+        bottom: 2rem;
+        left: 2rem;
+    }
+    
+    .slideshow-controls {
+        padding: 0 1rem;
+    }
+    
+    .slide-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+}
