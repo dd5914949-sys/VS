@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verdi Studio — World-Class Sustainable Architecture</title>
+    <title>Verdi Studio – World-Class Sustainable Architecture</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -24,8 +24,30 @@
         </ul>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Slideshow -->
     <section class="hero">
+        <!-- Slideshow Background -->
+        <div class="hero-slideshow">
+            <div class="hero-slide active" style="background-image: url('images/hero/sustainable-architecture-4k-1-web.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero/parametric-design-4k-2-web.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero/green-building-4k-3-web.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero/modern-architecture-4k-4-web.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero/computational-design-4k-5-web.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero/eco-architecture-4k-6-web.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero/future-building-4k-7-web.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('images/hero/biophilic-design-4k-8-web.jpg');"></div>
+        </div>
+        
+        <!-- Overlay for text readability -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Slideshow Controls -->
+        <div class="slideshow-controls">
+            <button class="slide-btn prev" aria-label="Previous slide">‹</button>
+            <button class="slide-btn next" aria-label="Next slide">›</button>
+        </div>
+        
+        <!-- Hero Content -->
         <div class="hero-content">
             <h1 class="hero-title">World-Class Sustainable Architecture</h1>
             <p class="hero-subtitle">Architecture that breathes with nature</p>
@@ -37,9 +59,21 @@
                 <a href="studio.html" class="btn-secondary">Our Approach</a>
             </div>
         </div>
+        
+        <!-- Slideshow Indicators -->
+        <div class="slideshow-indicators">
+            <span class="indicator-dot active"></span>
+            <span class="indicator-dot"></span>
+            <span class="indicator-dot"></span>
+            <span class="indicator-dot"></span>
+            <span class="indicator-dot"></span>
+            <span class="indicator-dot"></span>
+            <span class="indicator-dot"></span>
+            <span class="indicator-dot"></span>
+        </div>
     </section>
 
-    <!-- Featured Projects -->
+     <!-- Featured Projects -->
     <section class="featured-section">
         <div class="section-header">Featured Work</div>
         <h2 class="section-title">Selected Projects</h2>
@@ -165,13 +199,13 @@
                 <a href="studio.html" class="btn-primary" style="display: inline-block; margin-top: 1rem;">Learn More About Us</a>
             </div>
             <div class="philosophy-visual">
-                <img src="images/philosophy-workspace.png" alt="Verdi Studio Philosophy">
+                <img src="images/philosophy-workspace.jpg" alt="Verdi Studio Philosophy">
             </div>
         </div>
         
         <div class="quote">
             Every building is an experiment in sustainable living.
-            <div class="quote-author">— Alexandra Chen, Founder</div>
+            <div class="quote-author">– Alexandra Chen, Founder</div>
         </div>
     </section>
 
@@ -238,6 +272,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="hero-slideshow.js"></script>
 </body>
 </html>
