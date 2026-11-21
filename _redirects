@@ -1,0 +1,8 @@
+# Honoured by Cloudflare Pages / Netlify (true 301s). GitHub Pages ignores this file and uses the
+# meta-refresh alias pages Hugo generates from `aliases:` in each content file instead.
+/index.html     /                301
+/projects.html  /projects/       301
+/services.html  /services/       301
+/studio.html    /studio/         301
+/contact.html   /contact/        301
+/journal.html   /journal/        301
